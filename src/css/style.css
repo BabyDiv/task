@@ -17,36 +17,17 @@ header {
 	margin-bottom: 44px;
 }
 
-h1 {
-	font-size: 36px;
-	font-weight: bold;
-	text-align: center;
-	color: #03228C;
-	background: linear-gradient(#24AC06, #03228C);
-	background-clip: text;
-	margin-bottom: 60px;
-}
-
-h2 {
-	font-size: 24px;
-	font-weight: bold;
-	color: #03228C;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
   max-width: 800px;
   margin: auto;
 }
+
 th, td {
   padding: 15px;
   text-align: left;
   border: 1px solid black;
-}
-
-th {
-  background-color: #03228C;
 }
 
 td {
@@ -65,9 +46,6 @@ tr:nth-child(even) {
   background-color: #03228C;
 }
 
-/* th, td {
-  border: 1px solid black;
-} */
 
 tr:nth-child(odd) th, tr:nth-child(odd) td {
   background-color: #fff;
@@ -98,8 +76,8 @@ tr:nth-child(even) th, tr:nth-child(even) td {
 }
 
 .button {
-	display: flex; /* Enable Flexbox layout for container element */
-  justify-content: center; /* Vertically center children elements */
-  align-items: center; /* Align children elements along the vertical axis */
+	display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
 }

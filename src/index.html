@@ -19,6 +19,7 @@
 	</header>
 
 	<main>
+
 		<section class="section__table">
 			<table id="myTable">
 				<thead>
@@ -30,33 +31,12 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td>
-							<input type="text">
-						</td>
-						<td>
-							<form>
-								<label for="type"></label>							
-								<select required="" name="capability_commitments" id="capability_commitments_type_1">
-									<option value="resource">Resource</option>
-									<option value="competence">Competence</option>
-									<option value="habit" selected="">Habit</option>
-
-								</select>
-							</form>
-						</td>
-						<td>
-							<input type="text">
-						</td>
-						<td>
-							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
-						</td>
-					</tr>
 
 					<tr>
 						<td>
 							<input type="text">
 						</td>
+
 						<td>
 							<form>
 								<label for="type"></label>							
@@ -67,17 +47,21 @@
 								</select>
 							</form>
 						</td>
+
 						<td>
 							<input type="text">
 						</td>
+
 						<td>
 							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
 						</td>
 					</tr>
+
 					<tr>
 						<td>
 							<input type="text">
 						</td>
+
 						<td>
 							<form>
 								<label for="type"></label>							
@@ -88,23 +72,52 @@
 								</select>
 							</form>
 						</td>
+
 						<td>
 							<input type="text">
 						</td>
+
 						<td>
 							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
 						</td>
 					</tr>
+
+					<tr>
+						<td>
+							<input type="text">
+						</td>
+
+						<td>
+							<form>
+								<label for="type"></label>							
+								<select required="" name="capability_commitments" id="capability_commitments_type_1">
+									<option value="resource">Resource</option>
+									<option value="competence">Competence</option>
+									<option value="habit" selected="">Habit</option>
+								</select>
+							</form>
+						</td>
+
+						<td>
+							<input type="text">
+						</td>
+						
+						<td>
+							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+						</td>
+					</tr>
+
 				</tbody>
 			</table>
+
 			<div class="button">
 				<button onclick="createRow()">Add New Task</button>
 			</div>
+
 		</section>
 	</main>
 
 	<footer>
-		<nav></nav>
 	</footer>
     
 </body>
