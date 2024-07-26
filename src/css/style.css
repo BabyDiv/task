@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #ffffff; 
+	background-color: #f3f4f9; 
 }
 
 .logo {
@@ -33,54 +33,73 @@ h2 {
 	color: #03228C;
 }
 
-.section-card__box {
-	width: 1248px;
-	background-color: #fdfdfd;
-	border-radius: 8px;
-	box-shadow: 0px 4px 20px rgba(253, 253, 253, 100%);
-	padding-left: 43px;
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid black;
 }
 
-.section-card__descr {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	margin-bottom: 32px;
+th {
+  background-color: #03228C;
 }
 
-.section-card__descr-button {
-	width: 84px;
-	height: 32px;
-	border: 1px solid linear-gradient(#24AC06, #03228C);
-	border-radius: 32px;
-	background-color: #fdfdfd;
-	font-size: 14px;
+td {
+	position: relative;
+	max-width: 302px;
+	min-width: 220px;
 }
 
-.section-card__input {
-	width: 452px;
-	position:relative;
-}
-
-.section-card__input input {
-	width: 452px;
-	min-height: 90px;
-	border: 1px solid #d4d4d4;
-	background-repeat: 8px;
-	padding: 0 0 12px 15px;
-}
-
-.section-card__input-button {
-	width: 84px;
-	height: 32px;
-	background: linear-gradient(#24AC06, #03228C);
-	color: #fdfdfd;
-	border-radius: 32px;
-	border: none;
-	font-size: 14px;
+input {
 	position: absolute;
-	left: 15px;
-	top: 45px;
-
+	left: 15;
+	top: 15;
 }
 
+tr:nth-child(even) {
+  background-color: #03228C;
+}
+
+/* th, td {
+  border: 1px solid black;
+} */
+
+tr:nth-child(odd) th, tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) th, tr:nth-child(even) td {
+  background-color: #fcfcfc;
+}
+
+.select {
+  width: auto;
+	max-height: none;
+  overflow-y: auto; 
+  overflow-x: hidden;
+  padding-right: 2px;
+}
+
+#myDropDown, #myDropDown2, #myDropDown3 {
+	width: 100%;
+	padding: 8px;
+	overflow-y: auto;
+  overflow-x: hidden;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: none;
+}
+
+.button {
+	display: flex; /* Enable Flexbox layout for container element */
+  justify-content: center; /* Vertically center children elements */
+  align-items: center; /* Align children elements along the vertical axis */
+  height: 200px;
+}

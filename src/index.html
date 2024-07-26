@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="./js/index.js"></script>
   <title>QuestMeUp</title>
 	<meta name="description" content="Do Your Quest And Ae Aour Best">
 </head>
@@ -18,34 +19,87 @@
 	</header>
 
 	<main>
-		<section class="section-about">
-			<div class="section-about__block">
-				<h1>Your quest</h1>
-			</div>
-		</section>
+		<section class="section__table">
+			<table id="myTable">
+				<thead>
+					<tr>
+						<th>Capability</th>
+						<th>Type of capability</th>
+						<th>Approach and action plan</th>
+						<th>Start date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<input type="text">
+						</td>
+						<td>
+							<form>
+								<label for="type"></label>							
+								<select required="" name="capability_commitments" id="capability_commitments_type_1">
+									<option value="resource">Resource</option>
+									<option value="competence">Competence</option>
+									<option value="habit" selected="">Habit</option>
 
-		<section class="section-card">
-			<div class="section-card__box">
-				<ul>
-					<li>
-						<div class="section-card__descr">
-							<img src="icons/capability.svg" alt="Capability icon">
-							<h2>Capability</h2>
-							<button class="section-card__descr-button">Edit</button>
-						</div>
-						<div class="section-card__input">
-						  <input type="text" placeholder="Write a comment...">
-							<button class="section-card__input-button">Add</button>
-						</div>
-					</li>
-					<li></li>
-					<li></li>				
-				</ul>
+								</select>
+							</form>
+						</td>
+						<td>
+							<input type="text">
+						</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="text">
+						</td>
+						<td>
+							<form>
+								<label for="type"></label>							
+								<select required="" name="capability_commitments" id="capability_commitments_type_1">
+									<option value="resource">Resource</option>
+									<option value="competence">Competence</option>
+									<option value="habit" selected="">Habit</option>
+								</select>
+							</form>
+						</td>
+						<td>
+							<input type="text">
+						</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="text">
+						</td>
+						<td>
+							<form>
+								<label for="type"></label>							
+								<select required="" name="capability_commitments" id="capability_commitments_type_1">
+									<option value="resource">Resource</option>
+									<option value="competence">Competence</option>
+									<option value="habit" selected="">Habit</option>
+								</select>
+							</form>
+						</td>
+						<td>
+							<input type="text">
+						</td>
+						<td>
+							<input type="date" id="start" name="trip-start" value="2024-07-26" min="2024-07-26" max="2025-07-26" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button">
+				<button onclick="createRow()">Add New Task</button>
 			</div>
-			<div class="section-description__text-box">
-			</div>
-		</section>
-		<section class="section__map">
 		</section>
 	</main>
 
