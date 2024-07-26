@@ -32,12 +32,13 @@ th, td {
 
 td {
 	position: relative;
-	max-width: 302px;
+	max-width: 360px;
 	min-width: 220px;
 }
 
 input {
 	position: absolute;
+	max-width: 210px;
 	left: 15;
 	top: 15;
 }
